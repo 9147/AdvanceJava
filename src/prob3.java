@@ -49,6 +49,15 @@ public class prob3 {
             System.out.println("Error: " + ex);
         }
 
+//        comparing file properties
+        System.out.println("File properties of source file:");
+        System.out.println("File name: "+filesrc.getName());
+        System.out.println("File path: "+filesrc.getPath());
+        System.out.println("File size: "+filesrc.length());
+        System.out.println("File properties of destination file:");
+        System.out.println("File name: "+filedest.getName());
+        System.out.println("File path: "+filedest.getPath());
+        System.out.println("File size: "+filedest.length());
 
     }
 
