@@ -160,8 +160,7 @@ class Credientials{
         Scanner scn = new Scanner(System.in);
         System.out.println("Enter the value to search: ");
         String value = scn.next();
-        Collection<String> values = data.values();
-        if(values.contains(value)) System.out.println("value is found!");
+        if(data.containsValue(value)) System.out.println("value is found!");
         else System.out.println("value not found");
         System.out.println();
     }
