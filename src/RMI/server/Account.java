@@ -23,7 +23,7 @@ public class Account extends UnicastRemoteObject implements Bank{
             System.out.println("Insufficient balance");
             return;
         }else{
-            accounts.put(accountno, accounts.get(accountno)-amount);
+            accounts.put(accountno, accounts.getOrDefault(accountno,0)-amount);
         }
 
     }
